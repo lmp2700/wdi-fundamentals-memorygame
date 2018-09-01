@@ -1,6 +1,7 @@
 var cardOne = "queen";
-var cardTwo = "queen";
-var cardThree = "king";
+var cardTwo = "king";
+var cardThree = "queen";
 var cardFour = "king";
-console.log("User flipped" + cardOne)
-console.log("User flipped" + cardFour)
+
+console.log("user flipped " + cardOne)
+console.log("user flipped " + cardFour)
