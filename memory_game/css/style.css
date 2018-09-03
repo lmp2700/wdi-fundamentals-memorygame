@@ -82,6 +82,7 @@ a:hover {
 li {
 	display: inline;
 	padding: 0 10px;
+	font-color: #F15B31;
 }
 
 footer {
