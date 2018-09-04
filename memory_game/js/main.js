@@ -1,27 +1,35 @@
 var cards = ["queen", "queen", "king", "king"];
-var cardsInPlay = [];
+var cardsInPlay = []; 
 
-var cardOne = cards[0];
-cardsInPlay.push(cardOne);
-console.log("User flipped " + cardOne);
-
-var cardTwo = cards[2];
-cardsInPlay.push(cardTwo);
-console.log("User flipped " + cardTwo);
-
-/* var cardThree = cards[2];
-cardsInPlay.push(cardThree);
-console.log("User flipped " + cardThree);
-
-var cardFour= cards[3];
-cardsInPlay.push(cardFour);
-console.log("User flipped " + cardFour); */
-
-if (cardsInPlay.length % 2 === 0) {
-	console.log(cardsInPlay.length);
+var checkForMatch = function () {
+	if (cardsInPlay[0] === cardsInPlay[1]) {
+	console.log("You found a match!");
+} else {
+	console.log("Sorry, try again.");
+	}
 }
-	if (cardsInPlay[0] === cardsInPlay[2]) {
-	alert("You found a match!");
-	} else {
-		alert("Sorry, try again");
-	};
+// checkForMatch function is over-riding calling checkForMatch in 
+// flipCard function (??)
+// stating that king & queen are a match when they are not
+// console.log in flipCard function is pulling correct cards
+
+var flipCard = function (cardId) {
+	console.log("User flipped " + cards[0]);
+	console.log("User flipped " + cards[2]); 
+	checkForMatch();
+} 
+
+flipCard();
+
+cardsInPlay.push(cards[0]);
+cardsInPlay.push(cards[2]);
+
+
+/* 	DELETE THESE LINES OF CODE:
+	var cardOne = cards[0];
+	cardsInPlay.push(cardOne);
+	console.log("User flipped " + cardOne);
+	
+	var cardTwo = cards[3];
+	cardsInPlay.push(cardTwo);
+	console.log("User flipped " + cardTwo); */
