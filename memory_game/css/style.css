@@ -79,10 +79,14 @@ a:hover {
 	border-color: white;
 }
 
+ul {
+	color: #F15B31;
+}
+
 li {
 	display: inline;
 	padding: 0 10px;
-	font-color: #F15B31;
+	color: #F15B31;
 }
 
 footer {
@@ -94,12 +98,16 @@ footer {
 	letter-spacing: .08em;
 	font-weight: 500;
 }
-.instructions {
+.navigation {
 	color: #FFFFFF;
 }
 
-#instructions2 {
+#instructions {
 	color: #0D2C40;
+}
+
+.social {
+	color: #F15B31;
 }
 
 .name {
